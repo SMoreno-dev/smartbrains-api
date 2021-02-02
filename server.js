@@ -15,10 +15,11 @@ const image = require('./controllers/image');
 //Middleware
 app.use(express.json());
 app.use(cors());
+const DATABASE_URL = process.env.DATABASE_URL;
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString: process.env.DATABASE_URL,
+        connectionString: DATABASE_URL,
         ssl: true
     }
 });
