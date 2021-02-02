@@ -29,6 +29,7 @@ const db = knex({
 const PORT = process.env.PORT;
 
 app.get("/", (req, res) => {
+    res.send('it is working')
 })
 
 app.listen(PORT, () => {
