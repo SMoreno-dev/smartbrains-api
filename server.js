@@ -6,7 +6,7 @@ const cors = require("cors");
 const knex = require('knex');
 
 
-//module imports
+//controller imports
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
